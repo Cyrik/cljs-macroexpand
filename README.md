@@ -2,6 +2,9 @@
 
 clojurescript macroexpand-all macro with meta support.
 
+[![Clojars Project](https://img.shields.io/clojars/v/net.clojars.cyrik/cljs-macroexpand.svg)](https://clojars.org/net.clojars.cyrik/cljs-macroexpand)
+
+
 ```clojure
 (cljs-macroexpand-all '(when (let [a 5] a) "false"))
 ;; (if (let* [a 5] a) (do "false"))
@@ -15,8 +18,6 @@ Its mostly lifted from [flow-storm](https://github.com/jpmonettas/flow-storm/blo
 
 
 ## Usage
-
-FIXME: write usage documentation!
 
 Run the project's tests (they'll fail until you edit them):
 
