@@ -1,0 +1,12 @@
+;; shadow-cljs configuration
+{:deps     {:aliases [:shadow-cljs]}
+ :dev-http {8280 "resources/public"}
+ :builds   {:app          {:target     :browser
+                           :output-dir "resources/public/js/compiled"
+                           :asset-path "/js/compiled"
+                           :modules    {:app {:entries [cyrik.cljs-macroexpand]}}
+                           :devtools   {:after-load portal.ui.core/reload!
+                                        :repl-pprint true}
+                           :dev        {:compiler-options {:infer-externs :auto}}
+                           :release    {:compiler-options {:warnings-as-errors #{:undeclared-var}
+                                                           :infer-externs      :auto}}}}}

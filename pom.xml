@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>net.clojars.cyrik</groupId>
+  <artifactId>cljs-macroexpand</artifactId>
+  <version>LATEST</version>
+  <name>cljs-macroexpand</name>
+  <description>clojurescript macroexpand-all macro with meta support.</description>
+  <url>https://github.com/cyrik/cljs-macroexpand</url>
+  <licenses>
+    <license>
+      <name>Eclipse Public License</name>
+      <url>http://www.eclipse.org/legal/epl-v10.html</url>
+    </license>
+  </licenses>
+  <developers>
+    <developer>
+      <name>Lukas Domagala</name>
+    </developer>
+  </developers>
+  <scm>
+    <url>https://github.com/cyrik/cljs-macroexpand</url>
+    <connection>scm:git:git://github.com/cyrik/cljs-macroexpand.git</connection>
+    <developerConnection>scm:git:ssh://git@github.com/cyrik/cljs-macroexpand.git</developerConnection>
+    <tag>HEAD</tag>
+  </scm>
+  <build>
+    <sourceDirectory>src</sourceDirectory>
+  </build>
+  <repositories>
+    <repository>
+      <id>clojars</id>
+      <url>https://repo.clojars.org/</url>
+    </repository>
+  </repositories>
+  <distributionManagement>
+    <repository>
+      <id>clojars</id>
+      <name>Clojars repository</name>
+      <url>https://clojars.org/repo</url>
+    </repository>
+  </distributionManagement>
+  <dependencies>
+    <dependency>
+      <groupId>org.clojure</groupId>
+      <artifactId>clojure</artifactId>
+      <version>1.10.3</version>
+    </dependency>
+    <dependency>
+      <groupId>org.clojure</groupId>
+      <artifactId>clojurescript</artifactId>
+      <version>1.10.879</version>
+    </dependency>
+  </dependencies>
+</project>

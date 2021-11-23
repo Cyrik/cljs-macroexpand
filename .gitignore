@@ -1,0 +1,25 @@
+/target
+/classes
+/checkouts
+/node_modules
+*.jar
+*.class
+/.calva/output-window/
+/.cpcache
+/.lein-*
+/.lsp/sqlite*.db
+/.nrepl-history
+/.nrepl-port
+/.rebel_readline_history
+/.socket-repl-port
+.shadow-cljs/
+.cljs_node_repl/
+.clj-kondo/.cache/
+.hgignore
+.hg/
+resources/public/js/
+
+# vscode
+*.calva/
+.lsp/
+.portal/
